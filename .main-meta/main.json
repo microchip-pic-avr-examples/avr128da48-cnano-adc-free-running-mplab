@@ -3,10 +3,10 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.avr128da48-cnano-adc-free-running",
+        "name": "com.microchip.mcu8.mplabx.project.avr128da48-cnano-adc-free-running-mplab",
         "version": "1.0.0",
         "displayName": "ADC Free Running Conversions",
-        "projectName": "avr128da48-cnano-adc-free-running",
+        "projectName": "avr128da48-cnano-adc-free-running-mplab",
         "shortDescription": "This application showcases the free running feature of the ADC.",
         "ide": {
             "name": "MPLABX",
