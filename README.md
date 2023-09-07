@@ -15,7 +15,6 @@ More details and code examples on the AVR128DA48 can be found at the following l
 - [AVR128DA48 Code Examples on GitHub](https://github.com/microchip-pic-avr-examples?q=avr128da48)
 - [Using 12-Bit ADC for Conversions, Accumulation, and Triggering Events](https://www.microchip.com/wwwappnotes/appnotes.aspx?appnote=en1001530)
 
-
 ## Software Used
 
 - [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v6.15 or newer
@@ -37,7 +36,7 @@ To program the Curiosity Nano board with this MPLAB X project, follow the steps 
 
 ## Setup
 
-The AVR128DA48 Curiosity Nano Development Board is used as the test platform. The POT Click board is placed on the first mikro BUS slot of the Curiosity Nano Adapter board as in the below picture.
+The AVR128DA48 Curiosity Nano Development Board is used as the test platform. The POT Click board is placed on the first mikroBUS slot of the Curiosity Nano Adapter board as in the below picture.
 <br><img src="images/connections.png" width="600">
 
 <br>The following configurations must be made:
@@ -47,14 +46,17 @@ The AVR128DA48 Curiosity Nano Development Board is used as the test platform. Th
 - Initialize and configure ADC module
 - Initialize and configure USART module
 - Initialize and configure PORT module
-   |Pin           | Configuration      |
-   | :----------: | :----------------: |
-   |PD3 (AIN3)    | Analog Input       |
-   |PC0 (TX)      | Digital Output     |
+
+The following pin configuration must be made for this project:
+
+|Pin           | Configuration      |
+| :----------: | :----------------: |
+|PD3 (AIN3)    | Analog Input       |
+|PC0 (TX)      | Digital Output     |
 
 ## Demo
 
-Rotating the Potentiometer on the POT click board, after programming, the ADC result will be plotted on the graph from Data Visualizer plugin as in below picture. Follow the steps in the **[How to use MPLAB® Data Visualizer](#how-to-use-mplab-data-visualizer)** section to set up the Data Visualizer so that it can correctly view the plotted values through USART.
+Rotating the Potentiometer on the POT click board, after programming, the ADC result will be plotted on the graph from Data Visualizer plugin as in below picture. Follow the steps in the **[How to use MPLAB Data Visualizer](#how-to-use-mplab-data-visualizer)** section to set up the Data Visualizer so that it can correctly view the plotted values through USART.
 
 <br><img src="images/data_visualizer_data.png" alt="Demo" width="800"/>
 
