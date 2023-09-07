@@ -3,7 +3,7 @@
 
     \brief  ADC Free-Running
 
-    (c) 2019 Microchip Technology Inc. and its subsidiaries.
+    (c) 2013 Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip software and any
     derivatives exclusively with Microchip products. It is your responsibility to comply with third-party
@@ -48,7 +48,7 @@ void USART1_Write(const uint8_t data);
 void CLKCTRL_init(void)
 {
     /* FREQSEL 4M */
-    ccp_write_io((void*)&(CLKCTRL.OSCHFCTRLA), (CLKCTRL.OSCHFCTRLA | CLKCTRL_FREQSEL_4M_gc));
+    ccp_write_io((void*)&(CLKCTRL.OSCHFCTRLA), (CLKCTRL.OSCHFCTRLA | CLKCTRL_FRQSEL_4M_gc));
 }
 
 /* This function initializes the PORT module */
