@@ -2,9 +2,9 @@
 
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/Microchip.png" alt="MCHP" width="300"/></a>
 
-# ADC Free Running Conversions using AVR128DA48 Microcontroller
+# Analog-to-Digital Converter (ADC) — Free Running Conversions Using AVR128DA48 Microcontroller
 
-In this application, the Analog-to-Digital Convertor (ADC) continuously performs conversions. The software's example code diagram is presented in the figure below.
+In this application, the ADC continuously performs conversions. The software's example code diagram is presented in the figure below.
 <br><img src="images/soft_diagram.png" width="200">
 
 ## Related Documentation
@@ -20,6 +20,7 @@ More details and code examples on the AVR128DA48 can be found at the following l
 - [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v6.15 or newer
 - [MPLAB® XC8](http://www.microchip.com/mplab/compilers) v2.45 or newer
 - [AVR-Dx Series Device Pack](https://packs.download.microchip.com/) v2.3.272 or newer
+- [MPLAB® Data Visualizer](https://www.microchip.com/en-us/tools-resources/debug/mplab-data-visualizer)
 
 ## Hardware Used
 
@@ -38,14 +39,6 @@ To program the Curiosity Nano board with this MPLAB X project, follow the steps 
 
 The AVR128DA48 Curiosity Nano Development Board is used as a test platform. The POT Click board is placed on the first mikroBUS slot of the Curiosity Nano Adapter board, as in the below picture.
 <br><img src="images/connections.png" width="600">
-
-<br>The following configurations must be made:
-
-- Initialize and configure CLKCTRL module
-- Initialize and configure VREF module
-- Initialize and configure ADC module
-- Initialize and configure USART module
-- Initialize and configure PORT module
 
 The following pin configuration must be made for this project:
 
@@ -125,7 +118,7 @@ This chapter shows how to use the MPLAB X IDE to program an AVR® device with an
 
 - - -
 ## Menu
-- [Back to Top](#adc-free-running-conversions-using-avr128da48-microcontroller)
+- [Back to Top](#analog-to-digital-converter-adc--free-running-conversions-using-avr128da48-microcontroller)
 - [Back to Related Documentation](#related-documentation)
 - [Back to Software Used](#software-used)
 - [Back to Hardware Used](#hardware-used)
