@@ -4,7 +4,7 @@
 
 # ADC Free Running Conversions using AVR128DA48 Microcontroller
 
-In this application, the Analog-to-Digital Convertor (ADC) will continuously perform conversions. The software diagram of this code example is presented in the figure below.
+In this application, the Analog-to-Digital Convertor (ADC) continuously performs conversions. The software's example code diagram is presented in the figure below.
 <br><img src="images/soft_diagram.png" width="200">
 
 ## Related Documentation
@@ -36,7 +36,7 @@ To program the Curiosity Nano board with this MPLAB X project, follow the steps 
 
 ## Setup
 
-The AVR128DA48 Curiosity Nano Development Board is used as the test platform. The POT Click board is placed on the first mikroBUS slot of the Curiosity Nano Adapter board as in the below picture.
+The AVR128DA48 Curiosity Nano Development Board is used as a test platform. The POT Click board is placed on the first mikroBUS slot of the Curiosity Nano Adapter board, as in the below picture.
 <br><img src="images/connections.png" width="600">
 
 <br>The following configurations must be made:
@@ -56,7 +56,7 @@ The following pin configuration must be made for this project:
 
 ## Demo
 
-Rotating the Potentiometer on the POT click board, after programming, the ADC result will be plotted on the graph from Data Visualizer plugin as in below picture. Follow the steps in the **[How to use MPLAB Data Visualizer](#how-to-use-mplab-data-visualizer)** section to set up the Data Visualizer so that it can correctly view the plotted values through USART.
+Rotating the Potentiometer on the POT click board, after programming, the ADC result will be plotted on the graph from Data Visualizer plugin, as in below picture. Follow the steps in the **[How to use MPLAB Data Visualizer](#how-to-use-mplab-data-visualizer)** section to set up the Data Visualizer so that it can correctly view the plotted values through USART.
 
 <br><img src="images/data_visualizer_data.png" alt="Demo" width="800"/>
 
@@ -68,12 +68,12 @@ This bare-metal application showcases the free running feature of the ADC.
 
 This section illustrates how to use the MPLAB X Data Visualizer to send commands and receive information, but prior to programming the AVR128DA48 Curiosity Nano Board. This can be applied to any other projects.
 
-1. Open the software terminal in MPLAB X IDE. Left click on the **Data Visualizer** button.
+1. Open the software terminal in MPLAB X IDE. Click on the **Data Visualizer** button.
 
 <br><img src="images/data_visualizer_button.png" width="800">
 
-2. Prepare settings in Data Visualizer.
-- Left click on the specific serial port communication **COMx**
+2. Prepare the settings in Data Visualizer.
+- Click on the specific serial port communication **COMx**
 - Set the correct **Baud Rate**
 - In the **Connections** tab, at the **COMx** option, press **New variable streamer...**
 - Type a specific **Variable Streamer Name**
@@ -81,11 +81,11 @@ This section illustrates how to use the MPLAB X Data Visualizer to send commands
 - Type a specific value from the **Start of Frame**, press **Add a variable**
 - Type a specific name for the variable name in **Variable Name**
 - Press **Next**, after that press **Next** again
-- Optional: save these settings using **Save As** button as a json file.
+- Optional: Save these settings as a json file by pressing **Save as**
 
 <br><img src="images/plot_streaming_data.png" width="800">
 
-3. See the expected result on Data Visualizer
+3. See the expected result on Data Visualizer.
 - Select **Source** from Time Plot window
 - Click **Start Streaming COMx** the communication serial port
 - Click **Scroll axis automatically**.
